@@ -1,0 +1,21 @@
+vacation_mode:
+  name: On Vacation
+  icon: mdi:airplane
+guest_mode:
+  name: Guest mode
+  icon: mdi:human-male-female
+automatic_temperature:
+  name: Automatic temperature
+  icon: mdi:thermometer
+presence_mode:
+  name: Présence On / Off
+  initial: off
+  icon: mdi:account-multiple
+presence_mel:
+  name: Présence Mel
+  initial: off
+  icon: mdi:account
+presence_max:
+  name: Présence Max
+  initial: off
+  icon: mdi:account

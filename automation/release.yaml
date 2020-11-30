@@ -1,0 +1,19 @@
+- id: home_assistant_release_notification
+  alias: Home Assistant Release notification
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.updater
+      from: 'off'
+      to: 'on'
+  action:
+    - service: notify.telegram
+      data:
+        message: >
+          Une mise à jour de Home Assistant est disponible:  {{ states('sensor.updater') }}
+    - service: persistent_notification.create
+      data:
+        title: Mise à jour disponible !
+        message: >-
+          Une mise à jour de Home Assistant est disponible !
+          La version {{ states('sensor.updater') }} vient d'être déployée !
+        notification_id: hassio_upgrade

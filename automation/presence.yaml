@@ -1,0 +1,40 @@
+- id: everyones_arriving
+  alias: Everyone is Arriving
+  description: Turn on things when people arriving
+  trigger:
+    platform: state
+    entity_id: input_boolean.presence_mode
+    from: 'off'
+    to: 'on'
+  action:
+    - service: climate.turn_on
+      data:
+        entity_id: climate.marius
+    - service: climate.turn_on
+      data:
+        entity_id: climate.chambre_parents
+    - service: notify.telegram
+      data:
+        message: >
+          🏠 : Quelqu'un vient de rentrer à la maison!
+
+- id: everyones_leaving
+  alias: Everyone is Leaving
+  description: Turn off things when people arriving
+  trigger:
+    platform: state
+    entity_id: input_boolean.presence_mode
+    from: 'on'
+    to: 'off'
+    for: '00:10:00'
+  action:
+    - service: climate.turn_off
+      data:
+        entity_id: climate.marius
+    - service: climate.turn_off
+      data:
+        entity_id: climate.chambre_parents
+    - service: notify.telegram
+      data:
+        message: >
+          🏠 : Il n'y a plus personne a la maison!

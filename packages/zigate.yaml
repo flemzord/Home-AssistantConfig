@@ -1,0 +1,6 @@
+# Zigate:
+zigate: 
+  port: /dev/ttyUSB0
+  channel: 24
+  enable_led : false
+  admin_panel: true

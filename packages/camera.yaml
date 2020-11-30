@@ -1,0 +1,11 @@
+camera:
+  - platform: generic
+    name: Chambre Marius
+    still_image_url: !secret camera_marius_image
+    stream_source: !secret camera_marius_flux
+  - platform: generic
+    name: Salon
+    still_image_url: !secret camera_salon_image
+    stream_source: !secret camera_salon_flux
+
+stream:

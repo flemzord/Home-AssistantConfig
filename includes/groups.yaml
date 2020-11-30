@@ -1,0 +1,41 @@
+persons:
+  name: People
+  entities:
+    - person.maxence
+    - person.melanie
+
+iphone_maxence:
+  - sensor.iphone_activity
+  - sensor.iphone_average_active_pace
+  - sensor.iphone_bssid
+  - sensor.iphone_battery_level
+  - sensor.iphone_battery_state
+  - sensor.iphone_connection_type
+  - sensor.iphone_distance
+  - sensor.iphone_floors_ascended
+  - sensor.iphone_floors_descended
+  - sensor.iphone_geocoded_location
+  - sensor.iphone_last_update_trigger
+  - sensor.iphone_sim_1
+  - sensor.iphone_sim_2
+  - sensor.iphone_ssid
+  - sensor.iphone_steps
+  - device_tracker.iphone
+
+iphone_melanie:
+  - sensor.iphone_de_melanie_activity
+  - sensor.iphone_de_melanie_average_active
+  - sensor.iphone_de_melanie_bssid
+  - sensor.iphone_de_melanie_battery_level
+  - sensor.iphone_de_melanie_battery_state
+  - sensor.iphone_de_melanie_connection_type
+  - sensor.iphone_de_melanie_distance
+  - sensor.iphone_de_melanie_floors_ascended
+  - sensor.iphone_de_melanie_floors_descended
+  - sensor.iphone_de_melanie_geocoded_location
+  - sensor.iphone_de_melanie_last_update_trigger
+  - sensor.iphone_de_melanie_sim_1
+  - sensor.iphone_de_melanie_sim_2
+  - sensor.iphone_de_melanie_ssid
+  - sensor.iphone_de_melanie_steps
+  - device_tracker.iphone_de_melanie

@@ -1,0 +1,14 @@
+- platform: group
+  name: all_iphones
+  services:
+    - service: mobile_app_iphone
+    - service: mobile_app_iphone_de_melanie
+
+- platform: group
+  name: maxence_iphone
+  services:
+    - service: mobile_app_iphone
+
+- platform: telegram
+  name: telegram
+  chat_id: !secret telegram_chatId

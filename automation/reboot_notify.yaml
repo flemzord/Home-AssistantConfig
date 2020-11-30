@@ -1,0 +1,11 @@
+---
+- alias: "Alerte au redemarrage de Home Assistant"
+  description: Envoie une notification sur Telegram à chaque redemarrage de HA core
+  condition: []
+  trigger:
+    - event: start
+      platform: homeassistant
+  action:
+    - service: notify.telegram
+      data:
+        message: "Home Assitant a redémarré !"

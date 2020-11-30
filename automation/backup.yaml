@@ -1,0 +1,12 @@
+- alias: Snapshots went stale
+  id: 'snapshots_went_stale'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.snapshots_stale
+      from: 'off'
+      to: 'on'
+  condition: []
+  action:
+    - service: notify.telegram
+      data:
+        message: "Snapshots are Stale : Please visit the 'Home Assistant Google Drive Backup ' add-on status page for details."

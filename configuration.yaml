@@ -1,0 +1,33 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+homeassistant:
+  name: Maison
+  unit_system: metric
+  time_zone: !secret tz
+
+  packages: !include_dir_named packages
+
+automation: !include_dir_merge_list automation
+
+# Inputs
+input_boolean: !include includes/input_booleans.yaml
+proximity: !include includes/proximity.yaml
+binary_sensor: !include includes/binary_sensors.yaml
+
+# Logging and history
+logger: !include includes/logger.yaml
+#recorder: !include includes/recorder.yaml
+#device_tracker: !include includes/device_trackers.yaml
+
+# Others
+person: !include includes/persons.yaml
+zone: !include includes/zones.yaml
+group: !include includes/groups.yaml
+notify: !include includes/notify.yaml
+influxdb: !include includes/influxdb.yaml
+discovery: !include includes/discovery.yaml
+ios: !include includes/ios.yaml
+sonos: !include includes/sonos.yaml
+device_tracker: !include includes/device_tracker.yaml

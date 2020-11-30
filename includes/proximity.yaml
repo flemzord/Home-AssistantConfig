@@ -1,0 +1,7 @@
+home:
+  ignored_zones:
+    - work
+  devices:
+    - device_tracker.iphone
+    - device_tracker.iphone_de_melanie
+  tolerance: 50

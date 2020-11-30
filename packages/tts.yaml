@@ -1,0 +1,7 @@
+tts:
+  - platform: google_translate
+    language: 'fr'
+  - platform: amazon_polly
+    aws_access_key_id: !secret aws_access_key
+    aws_secret_access_key: !secret aws_secret_key
+    region_name: eu-west-1
