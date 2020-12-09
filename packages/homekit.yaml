@@ -27,3 +27,4 @@ homekit:
       - input_boolean.presence_max
       - climate.chambre_marius
       - light.zigate_000b57fffee9e3a3_1
+      - switch.prise_sapin_switch_3
