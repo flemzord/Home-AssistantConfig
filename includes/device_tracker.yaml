@@ -1,7 +1,7 @@
-- platform: icloud3
-  username: !secret icloud_username
-  password: !secret icloud_password
-  tracking_method: famshr
-  track_devices:
-  - iPhone > maxence.png
-  - iphone_de_melanie > melanie.png
+# - platform: icloud3
+#   username: !secret icloud_username
+#   password: !secret icloud_password
+#   tracking_method: famshr
+#   track_devices:
+#   - iPhone > maxence.png
+#   - iphone_de_melanie > melanie.png

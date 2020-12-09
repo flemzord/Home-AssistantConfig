@@ -13,6 +13,9 @@
     - service: climate.turn_on
       data:
         entity_id: climate.chambre_parents
+    - service: switch.turn_on
+      data:
+        entity_id: switch.prise_sapin_switch_3
     - service: notify.telegram
       data:
         message: >
@@ -34,6 +37,9 @@
     - service: climate.turn_off
       data:
         entity_id: climate.chambre_parents
+    - service: switch.turn_off
+      data:
+        entity_id: switch.prise_sapin_switch_3
     - service: notify.telegram
       data:
         message: >

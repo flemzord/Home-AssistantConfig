@@ -1,0 +1,35 @@
+- alias: "Christmas: turn off Christmas tree at 22:00"
+  trigger:
+    platform: time
+    at: "22:00"
+  action:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.prise_sapin_switch_3
+
+- alias: "Christmas: turn off Christmas tree at 8:00"
+  trigger:
+    platform: time
+    at: "8:00"
+  action:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.prise_sapin_switch_3
+
+- alias: "Christmas: turn on Christmas tree at 05:30"
+  trigger:
+    platform: time
+    at: "05:30"
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.prise_sapin_switch_3
+
+- alias: "Christmas: turn on Christmas tree at 17:30"
+  trigger:
+    platform: time
+    at: "17:30"
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.prise_sapin_switch_3

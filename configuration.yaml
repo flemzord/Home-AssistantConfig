@@ -31,3 +31,4 @@ discovery: !include includes/discovery.yaml
 ios: !include includes/ios.yaml
 sonos: !include includes/sonos.yaml
 device_tracker: !include includes/device_tracker.yaml
+tts: !include includes/tts.yaml
