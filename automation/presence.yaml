@@ -21,6 +21,19 @@
         message: >
           🏠 : Quelqu'un vient de rentrer à la maison!
 
+- id: wife_arriving
+  alias: My Wife is Arriving
+  description: Turn on things when people arriving
+  trigger:
+    platform: state
+    entity_id: input_boolean.presence_mel
+    from: 'off'
+    to: 'on'
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.prise_sapin_switch_3
+    
 - id: everyones_leaving
   alias: Everyone is Leaving
   description: Turn off things when people arriving

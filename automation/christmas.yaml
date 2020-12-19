@@ -16,10 +16,10 @@
       data:
         entity_id: switch.prise_sapin_switch_3
 
-- alias: "Christmas: turn on Christmas tree at 05:30"
+- alias: "Christmas: turn on Christmas tree at 05:45"
   trigger:
     platform: time
-    at: "05:30"
+    at: "05:45"
   action:
     - service: switch.turn_on
       data:
