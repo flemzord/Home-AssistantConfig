@@ -5,3 +5,8 @@
 #   track_devices:
 #   - iPhone > maxence.png
 #   - iphone_de_melanie > melanie.png
+
+- platform: synology_srm
+  host: 192.168.1.32
+  username: !secret srm_username
+  password: !secret srm_password

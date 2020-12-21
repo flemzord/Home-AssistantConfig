@@ -3,10 +3,10 @@
   user_id: 0dfc13cf64e3495ebe0b94e957daba3d
   picture: !secret personne_picture_maxence
   device_trackers:
-    - device_tracker.iphone # from iOS app
+    - device_tracker.iphone # from SRM
 - name: Melanie
   id: melanie
   user_id: d36b65b6897441e5a11424489e7c7fa6
   picture: !secret personne_picture_melanie
   device_trackers:
-    - device_tracker.iphone_de_melanie # from iOS app
+    - device_tracker.iphone_de_melanie # from SRM
