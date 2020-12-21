@@ -32,3 +32,4 @@ ios: !include includes/ios.yaml
 sonos: !include includes/sonos.yaml
 device_tracker: !include includes/device_tracker.yaml
 tts: !include includes/tts.yaml
+speedtestdotnet: !include includes/speedtestdotnet.yaml
