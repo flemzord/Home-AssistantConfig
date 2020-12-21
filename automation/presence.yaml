@@ -16,6 +16,9 @@
     - service: switch.turn_on
       data:
         entity_id: switch.prise_sapin_switch_3
+    - service: switch.turn_on
+      data:
+        entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
     - service: notify.telegram
       data:
         message: >
@@ -53,6 +56,9 @@
     - service: switch.turn_off
       data:
         entity_id: switch.prise_sapin_switch_3
+    - service: switch.turn_off
+      data:
+        entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
     - service: notify.telegram
       data:
         message: >
