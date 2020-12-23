@@ -1,0 +1,9 @@
+sensor:
+  - platform: myEnedis
+    token: !secret enedis_token
+    code: !secret enedis_code
+    heures_creuses: "[['00:00','06:30'], ['22:30', '24:00']]"
+    hc_cout: 0.1337
+    hp_cout: 0.1781
+    scan_interval: 3600
+    delay: 7200  # OPTION
