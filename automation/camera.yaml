@@ -1,0 +1,15 @@
+- alias: "tensorflow frontdoor"
+  trigger:
+    platform: state
+    entity_id: image_processing.doods_cam_salon
+  condition:
+    condition: template
+    value_template: "{{ 'person' in state_attr('image_processing.doods_cam_salon', 'summary') }}"
+  action:
+    - service: notify.telegram
+      data:
+        message: >
+          Tensorflow detect people in Salon
+        data:
+          photo:
+            file: "/config/www/records/salon.jpg"
