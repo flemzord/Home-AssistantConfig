@@ -38,4 +38,4 @@ iphone_melanie:
   - sensor.iphone_de_melanie_sim_2
   - sensor.iphone_de_melanie_ssid
   - sensor.iphone_de_melanie_steps
-  - device_tracker.iphone_de_melanie
+  - device_tracker.iphone_de_melanie  
