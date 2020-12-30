@@ -1,0 +1,17 @@
+- alias: "Cat: turn off fountain at 22:00"
+  trigger:
+    platform: time
+    at: "22:00:00"
+  action:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.prise_sapin_switch_3
+
+- alias: "Cat: turn on fountain at 08:00"
+  trigger:
+    platform: time
+    at: "08:00:00"
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.prise_sapin_switch_3

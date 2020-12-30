@@ -1,0 +1,18 @@
+- alias: "Light: turn off fountain at 22:00"
+  trigger:
+    platform: time
+    at: "22:00:00"
+  action:
+    - service: switch.turn_off
+      data:
+        entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
+
+- alias: "Light: turn on fountain at 08:00"
+  trigger:
+    platform: time
+    at: "08:00:00"
+  action:
+    - service: switch.turn_on
+      data:
+        entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
+      
