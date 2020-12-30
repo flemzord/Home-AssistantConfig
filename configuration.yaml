@@ -21,6 +21,7 @@ binary_sensor: !include includes/binary_sensors.yaml
 logger: !include includes/logger.yaml
 #recorder: !include includes/recorder.yaml
 #device_tracker: !include includes/device_trackers.yaml
+python_script:
 
 # Others
 person: !include includes/persons.yaml
