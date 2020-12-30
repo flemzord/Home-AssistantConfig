@@ -19,8 +19,7 @@ binary_sensor: !include includes/binary_sensors.yaml
 
 # Logging and history
 logger: !include includes/logger.yaml
-#recorder: !include includes/recorder.yaml
-#device_tracker: !include includes/device_trackers.yaml
+recorder: !include includes/recorder.yaml
 python_script:
 
 # Others
