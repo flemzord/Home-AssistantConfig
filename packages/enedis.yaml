@@ -6,4 +6,3 @@ sensor:
     hc_cout: 0.1337
     hp_cout: 0.1781
     scan_interval: 3600
-    delay: 7200  # OPTION

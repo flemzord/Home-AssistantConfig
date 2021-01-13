@@ -6,4 +6,4 @@
         {{ not is_state("person.maxence", "home")
             and not is_state("person.melanie", "home") }}
 - platform: workday
-  country: FR
+  country: FRA
