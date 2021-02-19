@@ -10,7 +10,7 @@ climate:
 
   - platform: generic_thermostat
     name: Marius
-    heater: switch.qubino_goap_zmnhadx_flush_1_relay_switch
+    heater: switch.flush_1_relay_current_value
     target_sensor: sensor.zigate_00158d00044f6735_temperature # Chambre Marius
     min_temp: 15
     max_temp: 28
