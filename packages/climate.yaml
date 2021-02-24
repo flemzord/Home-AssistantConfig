@@ -11,7 +11,8 @@ climate:
   - platform: generic_thermostat
     name: Marius
     heater: switch.flush_1_relay_current_value
-    target_sensor: sensor.zigate_00158d00044f6735_temperature # Chambre Marius
+    target_sensor: sensor.zigate_00158d0003232a90_temperature # Salon
+    # target_sensor: sensor.zigate_00158d00044f6735_temperature # Chambre Marius
     min_temp: 15
     max_temp: 28
     ac_mode: false
