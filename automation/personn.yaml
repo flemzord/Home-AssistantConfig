@@ -1,63 +1,63 @@
-- id: person_wife_arriving
-  alias: "Person: My Wife is Arriving"
-  description: Turn on things when people arriving
-  trigger:
-    platform: state
-    entity_id: input_boolean.presence_mel
-    from: 'off'
-    to: 'on'
-  action:
-    - service: python_script.set_state
-      data_template:
-        entity_id: person.melanie
-        state: 'home'
+# - id: person_wife_arriving
+#   alias: "Person: My Wife is Arriving"
+#   description: Turn on things when people arriving
+#   trigger:
+#     platform: state
+#     entity_id: input_boolean.presence_mel
+#     from: 'off'
+#     to: 'on'
+#   action:
+#     - service: python_script.set_state
+#       data_template:
+#         entity_id: person.melanie
+#         state: 'home'
 
-- id: person_wife_leaving
-  alias: "Person: My Wife is Leaving"
-  description: Turn on things when people leaving
-  trigger:
-    platform: state
-    entity_id: input_boolean.presence_mel
-    from: 'on'
-    to: 'off'
-  action:
-    - service: python_script.set_state
-      data_template:
-        entity_id: person.melanie
-        state: 'not_home'
+# - id: person_wife_leaving
+#   alias: "Person: My Wife is Leaving"
+#   description: Turn on things when people leaving
+#   trigger:
+#     platform: state
+#     entity_id: input_boolean.presence_mel
+#     from: 'on'
+#     to: 'off'
+#   action:
+#     - service: python_script.set_state
+#       data_template:
+#         entity_id: person.melanie
+#         state: 'not_home'
 
-- id: person_husband_arriving
-  alias: "Person: My husband is Arriving"
-  description: Turn on things when people arriving
-  trigger:
-    platform: state
-    entity_id: input_boolean.presence_max
-    from: 'off'
-    to: 'on'
-  action:
-    - service: python_script.set_state
-      data_template:
-        entity_id: person.maxence
-        state: 'home'
-    - service: python_script.set_state
-      data_template:
-        entity_id: person.maxence_maireaux
-        state: 'home'
+# - id: person_husband_arriving
+#   alias: "Person: My husband is Arriving"
+#   description: Turn on things when people arriving
+#   trigger:
+#     platform: state
+#     entity_id: input_boolean.presence_max
+#     from: 'off'
+#     to: 'on'
+#   action:
+#     - service: python_script.set_state
+#       data_template:
+#         entity_id: person.maxence
+#         state: 'home'
+#     - service: python_script.set_state
+#       data_template:
+#         entity_id: person.maxence_maireaux
+#         state: 'home'
 
-- id: person_husband_leaving
-  alias: "Person: My husband is Leaving"
-  description: Turn on things when people leaving
-  trigger:
-    platform: state
-    entity_id: input_boolean.presence_max
-    from: 'on'
-    to: 'off'
-  action:
-    - service: python_script.set_state
-      data_template:
-        entity_id: person.maxence
-        state: 'not_home'
-    - service: python_script.set_state
-      data_template:
-        entity_id: person.maxence_maireaux
-        state: 'not_home'
+# - id: person_husband_leaving
+#   alias: "Person: My husband is Leaving"
+#   description: Turn on things when people leaving
+#   trigger:
+#     platform: state
+#     entity_id: input_boolean.presence_max
+#     from: 'on'
+#     to: 'off'
+#   action:
+#     - service: python_script.set_state
+#       data_template:
+#         entity_id: person.maxence
+#         state: 'not_home'
+#     - service: python_script.set_state
+#       data_template:
+#         entity_id: person.maxence_maireaux
+#         state: 'not_home'

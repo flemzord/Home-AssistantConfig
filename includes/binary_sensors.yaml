@@ -1,9 +1,9 @@
-- platform: template
-  sensors:
-    no_one_home:
-      friendly_name: No one is home
-      value_template: >
-        {{ not is_state("person.maxence", "home")
-            and not is_state("person.melanie", "home") }}
-- platform: workday
-  country: FRA
+# - platform: template
+#   sensors:
+#     no_one_home:
+#       friendly_name: No one is home
+#       value_template: >
+#         {{ not is_state("person.maxence", "home")
+#             and not is_state("person.melanie", "home") }}
+# - platform: workday
+#   country: FRA

@@ -1,35 +1,35 @@
-camera:
-  - platform: generic
-    name: Chambre Marius
-    still_image_url: !secret camera_marius_image
-    stream_source: !secret camera_marius_flux
-  - platform: generic
-    name: Salon
-    still_image_url: !secret camera_salon_image
-    stream_source: !secret camera_salon_flux
-  - platform: local_file
-    name: doods_cam_chambre_marius
-    file_path: /config/www/records/chambre_marius.jpg
-  - platform: local_file
-    name: doods_cam_salon
-    file_path: /config/www/records/salon.jpg
+# camera:
+#   - platform: generic
+#     name: Chambre Marius
+#     still_image_url: !secret camera_marius_image
+#     stream_source: !secret camera_marius_flux
+#   - platform: generic
+#     name: Salon
+#     still_image_url: !secret camera_salon_image
+#     stream_source: !secret camera_salon_flux
+#   - platform: local_file
+#     name: doods_cam_chambre_marius
+#     file_path: /config/www/records/chambre_marius.jpg
+#   - platform: local_file
+#     name: doods_cam_salon
+#     file_path: /config/www/records/salon.jpg
 
-stream:
+# stream:
 
-image_processing:
-  - platform: doods
-    url: !secret doods_url
-    detector: default
-    scan_interval: 2
-    source:
-      - entity_id: camera.salon 
-    file_out: /config/www/records/salon.jpg
-    confidence: 50
-  - platform: doods
-    url: !secret doods_url
-    detector: default
-    scan_interval: 2
-    source:
-      - entity_id: camera.chambre_marius
-    file_out: /config/www/records/chambre_marius.jpg
-    confidence: 50
+# image_processing:
+#   - platform: doods
+#     url: !secret doods_url
+#     detector: default
+#     scan_interval: 2
+#     source:
+#       - entity_id: camera.salon 
+#     file_out: /config/www/records/salon.jpg
+#     confidence: 50
+#   - platform: doods
+#     url: !secret doods_url
+#     detector: default
+#     scan_interval: 2
+#     source:
+#       - entity_id: camera.chambre_marius
+#     file_out: /config/www/records/chambre_marius.jpg
+#     confidence: 50

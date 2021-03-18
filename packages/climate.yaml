@@ -1,51 +1,51 @@
-climate:
-  # - platform: smartir
-  #   name: Chambre Parents
-  #   unique_id: office_ac
-  #   device_code: 1260  # Ici le code IR pour les climatiseurs Toshiba
-  #   temperature_sensor: sensor.smartir_parents_temp # Ici on peut associer un capteur de température externe
-  #   humidity_sensor: sensor.smartir_parents_humidity  # Ici on peut associer un capteur d'hygrométrie externe
-  #   #power_sensor: binary_sensor.ac_power
-  #   controller_data: remote.rm4_mini_remote
+# climate:
+#   # - platform: smartir
+#   #   name: Chambre Parents
+#   #   unique_id: office_ac
+#   #   device_code: 1260  # Ici le code IR pour les climatiseurs Toshiba
+#   #   temperature_sensor: sensor.smartir_parents_temp # Ici on peut associer un capteur de température externe
+#   #   humidity_sensor: sensor.smartir_parents_humidity  # Ici on peut associer un capteur d'hygrométrie externe
+#   #   #power_sensor: binary_sensor.ac_power
+#   #   controller_data: remote.rm4_mini_remote
 
-  - platform: generic_thermostat
-    name: Marius
-    heater: switch.flush_1_relay_current_value
-    target_sensor: sensor.zigate_00158d0003232a90_temperature # Salon
-    # target_sensor: sensor.zigate_00158d00044f6735_temperature # Chambre Marius
-    min_temp: 15
-    max_temp: 28
-    ac_mode: false
-    target_temp: 20
-    cold_tolerance: 0.3
-    hot_tolerance: 0
-    min_cycle_duration:
-      seconds: 5
-    keep_alive:
-      minutes: 3
-    initial_hvac_mode: "off"
-    away_temp: 16
-    precision: 0.1
+#   - platform: generic_thermostat
+#     name: Marius
+#     heater: switch.flush_1_relay_current_value
+#     target_sensor: sensor.zigate_00158d0003232a90_temperature # Salon
+#     # target_sensor: sensor.zigate_00158d00044f6735_temperature # Chambre Marius
+#     min_temp: 15
+#     max_temp: 28
+#     ac_mode: false
+#     target_temp: 20
+#     cold_tolerance: 0.3
+#     hot_tolerance: 0
+#     min_cycle_duration:
+#       seconds: 5
+#     keep_alive:
+#       minutes: 3
+#     initial_hvac_mode: "off"
+#     away_temp: 16
+#     precision: 0.1
 
-# remote:
-#   - platform: broadlink
-#     name: rm4_mini
-#     type: rm4c_mini  # Ça c'est très important....
-#     host: !secret clim_rm_parent_ip
-#     mac: !secret clim_rm_parent_mac
+# # remote:
+# #   - platform: broadlink
+# #     name: rm4_mini
+# #     type: rm4c_mini  # Ça c'est très important....
+# #     host: !secret clim_rm_parent_ip
+# #     mac: !secret clim_rm_parent_mac
 
-# smartir:
-#   check_updates: false
+# # smartir:
+# #   check_updates: false
   
-# sensor: 
-#   - platform: template
-#     sensors:
-#       smartir_parents_temp:
-#         friendly_name: "SmartIR parents Temp"
-#         unit_of_measurement: "°C"
-#         value_template: "{{float(states('sensor.zigate_00158d00047b4c0c_temperature'))}}"
+# # sensor: 
+# #   - platform: template
+# #     sensors:
+# #       smartir_parents_temp:
+# #         friendly_name: "SmartIR parents Temp"
+# #         unit_of_measurement: "°C"
+# #         value_template: "{{float(states('sensor.zigate_00158d00047b4c0c_temperature'))}}"
   
-#       smartir_parents_humidity:
-#         friendly_name: "SmartIR parents Humidity"
-#         unit_of_measurement: "%"
-#         value_template: "{{float(states('sensor.zigate_00158d00047b4c0c_humidity'))}}"
+# #       smartir_parents_humidity:
+# #         friendly_name: "SmartIR parents Humidity"
+# #         unit_of_measurement: "%"
+# #         value_template: "{{float(states('sensor.zigate_00158d00047b4c0c_humidity'))}}"
