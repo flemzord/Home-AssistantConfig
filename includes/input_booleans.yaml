@@ -7,10 +7,10 @@ guest_mode:
 # automatic_temperature:
 #   name: Automatic temperature
 #   icon: mdi:thermometer
-# presence_mode:
-#   name: Présence On / Off
-#   initial: off
-#   icon: mdi:account-multiple
+presence_mode:
+  name: Présence On / Off
+  initial: off
+  icon: mdi:account-multiple
 # presence_mel:
 #   name: Présence Mel
 #   initial: off

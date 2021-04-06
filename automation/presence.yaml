@@ -34,26 +34,20 @@
 #       data:
 #         entity_id: switch.prise_sapin_switch_3
     
-# - id: everyones_leaving
-#   alias: Everyone is Leaving
-#   description: Turn off things when people arriving
-#   trigger:
-#     platform: state
-#     entity_id: input_boolean.presence_mode
-#     from: 'on'
-#     to: 'off'
-#     for: '00:10:00'
-#   action:
-#     - service: climate.turn_off
-#       data:
-#         entity_id: climate.marius
-#     - service: switch.turn_off
-#       data:
-#         entity_id: switch.prise_sapin_switch_3
-#     - service: switch.turn_off
-#       data:
-#         entity_id: switch.shenzhen_neo_electronics_co_ltd_power_plug_12a_switch_2
-#     - service: notify.telegram
-#       data:
-#         message: >
-#           🏠 : Il n'y a plus personne a la maison!
+- id: everyones_leaving
+  alias: Everyone is Leaving
+  description: Turn off things when people arriving
+  trigger:
+    platform: state
+    entity_id: input_boolean.presence_mode
+    from: 'on'
+    to: 'off'
+  action:
+    - service: lock.lock
+      data: {}
+      target:
+        entity_id: lock.home
+    - service: notify.telegram
+      data:
+        message: >
+          🏠 : Il n'y a plus personne a la maison!
