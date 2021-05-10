@@ -1,10 +1,11 @@
 camera:
-  - platform: generic
+  - platform: mjpeg
     name: Chambre Marius
-    still_image_url: !secret camera_marius_image
-    stream_source: !secret camera_marius_flux
-    username: !secret camera_username
-    password: !secret camera_password
+    mjpeg_url: http://192.168.1.124:8082/mjpeg
+    # still_image_url: !secret camera_marius_image
+    # stream_source: !secret camera_marius_flux
+    # username: !secret camera_username
+    # password: !secret camera_password
 #   - platform: generic
 #     name: Salon
 #     still_image_url: !secret camera_salon_image
